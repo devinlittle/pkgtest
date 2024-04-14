@@ -1,0 +1,11 @@
+# Template file for 'pkgtest'
+pkgname=pkgtest
+version=0.0.1
+revision=1
+build_style=cargo
+build_helper="rust"
+short_desc="pkgtest"
+maintainer="Devin Little <devinlittlee@gmail.com>"
+license="GPL-3.0"
+homepage="https://google.com"
+distfiles="https://github.com/eza-community/eza/archive/refs/tags/v${version}.tar.gz"
