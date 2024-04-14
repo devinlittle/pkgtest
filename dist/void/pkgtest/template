@@ -2,10 +2,17 @@
 pkgname=pkgtest
 version=0.0.1
 revision=1
-build_style=cargo
 build_helper="rust"
+build_style=cargo
+hostmakedepends="cargo"
+makedepends="rust-std"
 short_desc="pkgtest"
 maintainer="Devin Little <devinlittlee@gmail.com>"
 license="GPL-3.0"
 homepage="https://google.com"
-distfiles="https://github.com/eza-community/eza/archive/refs/tags/v${version}.tar.gz"
+distfiles="https://github.com/pixthehe/pkgtest/archive/refs/tags/${version}.tar.gz"
+checksum=null
+
+post_install() {
+	vlicense LICENSE
+}
